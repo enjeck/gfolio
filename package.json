@@ -8,6 +8,7 @@
     "google",
     "portfolio"
   ],
+  "homepage": "enjeck.github.io/gfolio",
   "main": "src/index.js",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "1.2.36",
@@ -16,7 +17,6 @@
     "@fortawesome/react-fontawesome": "0.1.15",
     "@material-ui/core": "4.12.3",
     "@material-ui/icons": "4.11.2",
-    "fuse.js": "6.4.6",
     "prop-types": "15.7.2",
     "react": "17.0.2",
     "react-dom": "17.0.2",
@@ -25,13 +25,16 @@
     "react-select": "4.3.1"
   },
   "devDependencies": {
-    "@babel/runtime": "7.13.8"
+    "@babel/runtime": "7.13.8",
+    "gh-pages": "^3.2.3"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": [
     ">0.2%",
