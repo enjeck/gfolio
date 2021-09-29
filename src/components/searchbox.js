@@ -1,0 +1,252 @@
+import "./searchbox.css";
+import React, { useState, useEffect } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faSearch,
+  faTimes,
+  faHistory
+} from "@fortawesome/free-solid-svg-icons";
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  Link,
+  Redirect,
+  withRouter,
+  useHistory
+} from "react-router-dom";
+import MobileSearch from "./mobileSearch";
+import { Content } from "../data/content";
+
+const SearchBox = () => {
+  const options = [
+    {
+      name: "everything about you",
+      value: "all"
+    },
+    {
+      name: "about",
+      value: "about"
+    },
+    { name: "works", value: "works" },
+    { name: "writing", value: "writing" },
+    { name: "images", value: "images" },
+    { name: "social", value: "social" }
+  ];
+
+  // Get url pathname to use as search value
+  const urlPathname = window.location.pathname;
+  var rx = /[^/](.*)/g;
+  var arr = rx.exec(urlPathname);
+  let val = "";
+  if (arr) {
+    val = arr[0];
+  }
+
+  const imgStyle = {
+    verticalAlign: "middle",
+    marginRight: 10,
+    fontSize: "13px",
+    color: "#aaa"
+  };
+
+  const removeBtnStyle = {
+    verticalAlign: "middle",
+    marginRight: 10,
+    fontSize: "13px",
+    color: "#555",
+    border: "0",
+    outline: "none",
+    background: "transparent",
+    float: "right",
+    padding: "10px",
+    cursor: "pointer"
+  };
+
+  function showOptions() {
+    let el = document.querySelector(".search-select");
+    el.style.display = "block";
+
+    if (window.innerWidth < 768) {
+      /* Display another search bar on mobile screens */
+      document.querySelector(".mobile-search-box").style.display = "block";
+      /* Hide other search options on mobile screens */
+      document.querySelector(".search-select").style.display = "none";
+    }
+  }
+
+  function hideOptions() {
+    // Delay element hiding by few milliseconds to ensure it can be clicked
+    setTimeout(function () {
+      let el = document.querySelector(".search-select");
+      el.style.display = "none";
+    }, 200);
+  }
+
+  useEffect(() => {
+    const clearBtn = document.querySelector(".clear-icon");
+    let input = document.querySelector(".search-input").value;
+    //console.log(input);
+    if (input) {
+      clearBtn.style.display = "none";
+    } else {
+      clearBtn.style.display = "inline-block";
+    }
+  }, []);
+
+  /// Remove option upon button click
+  function removeOption(i) {
+    // i.remove();
+    i.style.display = "none";
+  }
+
+  // Clear input field
+  function clear() {
+    let input = document.querySelector(".search-input");
+    input.value = "";
+  }
+
+  const clearValue = () => {
+    let closeIcon = document.querySelector(".clear-icon");
+    let searchValue = document.querySelector(".search-input").value;
+    if (searchValue) {
+      closeIcon.style.display = "inline-block";
+      document.querySelector(
+        ".search"
+      ).style.boxShadow = `1px 1px 6px rgba(0,0,0,0.2)`;
+    } else {
+      closeIcon.style.display = "none";
+      document.querySelector(".search").style.boxShadow = `none`;
+    }
+  };
+
+  useEffect(() => {
+    let inputField = document.querySelector(".search-input");
+    inputField.addEventListener("keyup", function (event) {
+      if (event.keyCode === 13) {
+        event.preventDefault();
+        searchWebsite();
+      }
+    });
+
+    let closeIcon = document.querySelector(".clear-icon");
+    let searchValue = document.querySelector(".search-input").value;
+    if (searchValue) {
+      closeIcon.style.display = "inline-block";
+      document.querySelector(
+        ".search"
+      ).style.boxShadow = `1px 1px 6px rgba(0,0,0,0.2)`;
+    } else {
+      closeIcon.style.display = "none";
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  // Search Website on Enter key press
+  const history = useHistory();
+  const searchWebsite = () => {
+    let path = document.querySelector(".search-input").value;
+    if (path) {
+      history.push(path);
+    }
+  };
+
+  // I'm Feeling Lucky search
+  function feelingLucky() {
+    let path = document.querySelector(".search-input").value;
+    /* Get all elements matching the search term */
+    const item = Content.filter((item) => item.category === path);
+    // Get the link of the first match
+    // Redirect to first match, if it exists
+    if (item[0]) {
+      const url = item[0].link;
+      window.location.href = url;
+    } else if (path) {
+      history.push(path);
+    }
+  }
+
+  return (
+    <div>
+      <div>
+        <MobileSearch />
+      </div>
+      <div className="search-box">
+        <div className="search-cont">
+          <FontAwesomeIcon className="fa fa-search" icon={faSearch} />
+
+          <div className="search">
+            <div className="search-value">
+              <input
+                placeholder=" "
+                autoComplete="on"
+                class="search-input"
+                defaultValue={val}
+                onFocus={showOptions}
+                onBlur={hideOptions}
+                onChange={clearValue}
+              />
+            </div>
+            <div className="search-select">
+              <div className="search-options">
+                {options.map((option) => (
+                  <div className="search-option" type="button">
+                    <span>
+                      <FontAwesomeIcon
+                        className="fas"
+                        icon={faHistory}
+                        style={imgStyle}
+                      />
+                      <Link to={`/${option.value}`}>{option.name}</Link>
+                      <span>
+                        <button
+                          className="remove-btn"
+                          style={removeBtnStyle}
+                          onClick={(e) =>
+                            removeOption(
+                              e.currentTarget.parentElement.parentElement
+                                .parentElement
+                            )
+                          }
+                        >
+                          Remove
+                        </button>
+                      </span>
+                    </span>
+                  </div>
+                ))}
+              </div>
+              {
+                <div
+                  className="search-btns"
+                  style={{ paddingTop: "20px", paddingBottom: "30px" }}
+                >
+                  <input
+                    className="search-btn sw"
+                    type="button"
+                    value="Search Website"
+                    onClick={searchWebsite}
+                  />
+                  <input
+                    className="search-btn ifl"
+                    type="button"
+                    value="I'm Feeling Lucky"
+                    onClick={feelingLucky}
+                  />
+                </div>
+              }
+            </div>
+          </div>
+          <FontAwesomeIcon
+            className="fa fa-times clear-icon"
+            icon={faTimes}
+            title="Clear"
+            onClick={clear}
+          />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default SearchBox;

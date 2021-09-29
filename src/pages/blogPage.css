@@ -1,0 +1,133 @@
+.result-count {
+  font-size: 14px;
+  color: #666;
+}
+
+.blog-card {
+  padding: 2px 0;
+  margin-bottom: 20px;
+  display: flex;
+  color: #333;
+  text-decoration: none;
+  border: 1px solid #eee;
+  padding: 0 20px;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.blog-text-container {
+  flex: 1;
+}
+
+.category {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+.category p {
+  margin-left: 10px;
+  color: #70757a;
+font-family: arial,sans-serif;
+font-size: 12px;
+line-height: 1.3333333333333333em;
+}
+
+.blog-card h3 {
+  margin: 0;
+  font-weight: normal;
+  max-width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.blog-card:hover h3 {
+  color: blue;
+}
+
+.blog-excerpt {
+  margin: 5px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: normal;
+  color: #70757a;
+  font-size: 14px;
+line-height: 1.45em;
+}
+
+@supports (-webkit-line-clamp: 3) {
+  .blog-excerpt {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: initial;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+  .blog-card h3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: initial;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+}
+
+.blog-date {
+  margin-top: 5px;
+  font-size: 12px;
+  line-height: 1.3333333333333333em;
+  color: #70757a;
+}
+
+.blog-img-container {
+  width: 110px;
+  height: 110px;
+  margin-left: 20px;
+  overflow: hidden;
+  border-radius: 10px;
+  align-self: flex-start;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+
+.blog-img-container img {
+  width: auto;
+  height: 100%;
+}
+
+.blog-icon {
+  width: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .blogpage-container {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .blog-card {
+    background: #fff;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .blog-card h3 {
+    max-width: 100%;
+    white-space: normal;
+    text-overflow: initial;
+    margin-bottom: 30px;
+  }
+
+  .blog-card .blog-excerpt {
+    display: none;
+  }
+
+  .blog-img-container {
+    width: 100px;
+  height: 100px;
+    align-self: center;
+    margin-top: 0;
+  }
+}

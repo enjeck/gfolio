@@ -1,0 +1,166 @@
+.profile-pic {
+  width: 35px;
+  height: 35px;
+  border: 3px solid transparent;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.fa-th {
+  font-size: 20px;
+  color: #5f6368 !important;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.profile .profile-hightlight-dropdown {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  width: auto;
+  height: auto;
+  box-shadow: none;
+  border: none;
+  border-radius: 5px;
+  z-index: 3;
+  right: 0;
+  top: 45px;
+  padding: 5px;
+  color: #aaa;
+}
+
+.profile-pic:hover {
+  border-color: #eee;
+}
+
+.profile-hightlight-dropdown p:nth-of-type(1) {
+  color: #fff;
+}
+
+.profile-hightlight-dropdown p {
+  font-size: 12px;
+  margin: 2px;
+}
+
+.profile .profile-details-dropdown {
+  position: absolute;
+  z-index: 3;
+  right: 0;
+  top: 50px;
+  padding: 5px;
+  color: #aaa;
+  width: 350px;
+  height: auto;
+  background-color: #fff;
+  border: 1px solid #eee;
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.2);
+  padding: 0;
+  right: 5px;
+}
+
+.profile-details-hide {
+  display: none;
+}
+
+.profile-details-show {
+  display: block;
+}
+
+.first-detail {
+  text-align: center;
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.profile-details-dropdown .first-detail img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.first-detail .detail-text {
+  font-size: 14px;
+  color: #555;
+  margin: 2px;
+}
+
+.first-detail .detail-text:nth-of-type(1) {
+  color: #111;
+  font-size: 17px;
+}
+
+.first-detail a {
+  padding: 10px 15px;
+  text-decoration: none;
+  border: 1px solid #eee;
+  color: #333;
+  line-height: 50px;
+  border-radius: 30px;
+}
+
+.first-detail a:hover {
+  background: #f8f8f8;
+}
+
+.second-detail {
+  display: flex;
+  align-items: center;
+  padding: 6px 30px;
+  border-bottom: 1px solid #eee;
+  color: #555;
+  text-decoration: none;
+}
+
+.second-detail:hover {
+  background: #f8f8f8;
+}
+.second-detail .fa-user-plus {
+}
+.second-detail p {
+  margin-left: 15px;
+}
+
+.third-detail {
+  padding: 25px 20px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+.third-detail a {
+  text-decoration: none;
+  padding: 10px 20px;
+  color: #333;
+  border: 1px solid #eee;
+  border-radius: 5px;
+}
+
+.third-detail a:hover {
+  background: #f8f8f8;
+}
+
+.fourth-detail {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.fourth-detail * {
+  text-decoration: none;
+  padding: 5px;
+  color: #555;
+  font-size: 13px;
+  border-radius: 5px;
+}
+
+.fourth-detail a:hover {
+  background-color: #f8f8f8;
+}

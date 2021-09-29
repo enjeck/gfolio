@@ -1,0 +1,104 @@
+/* Select Search */
+
+.search-box {
+  position: relative;
+  margin: 0 20px;
+}
+.fa {
+  position: absolute;
+  z-index: 2;
+  font-size: 15px;
+  color: #aaa;
+}
+.fa-search-left {
+  top: 15px;
+  left: 20px;
+  display: none;
+}
+
+.searchbox-icons {
+  position: absolute;
+  z-index: 2;
+ font-size: 20px;
+  top: 6px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.searchbox-icons .si {
+  cursor: pointer;
+  line-height: 20px;
+  padding: 6px 10px;
+}
+
+.searchbox-icons .clear-icon {
+  position: relative !important;
+  border-right: 1px solid #eee;
+}
+
+.searchbox-icons .fa-search-right {
+  color: #4285F4;
+}
+.clear-icon {
+  color: #777;
+  display: none;
+}
+
+/**
+ * Main wrapper
+ */
+.search-cont {
+  width: 692px;
+  position: absolute;
+}
+.search {
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+  border: 1px solid #eee;
+  border-radius: 30px;
+  position: relative;
+  background: #fff;
+}
+
+.search:hover {
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search *,
+.search *::after,
+.search *::before {
+  box-sizing: inherit;
+}
+
+/**
+* Value wrapper
+*/
+.select-search__value {
+  position: relative;
+  z-index: 1;
+}
+
+.search-value::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: calc(50% - 9px);
+  right: 19px;
+  width: 11px;
+  height: 11px;
+}
+
+
+
+.topmenu-search-option:last-child {
+  margin-bottom: 22px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.remove-btn:hover {
+  text-decoration: underline;
+  color: blue !important;
+}

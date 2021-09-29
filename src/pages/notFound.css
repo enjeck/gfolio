@@ -1,0 +1,22 @@
+.suggest {
+  margin-top: 40px;
+}
+
+.suggest p {
+  font-size: 18px;
+  color: #ea4335;
+}
+
+.suggestions a {
+  padding-right: 15px;
+  text-decoration: none;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+  .notfound-page {
+    padding: 0 30px;
+  }
+}

@@ -1,0 +1,77 @@
+/* Drop down */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content-cont {
+  display: none;
+  position: absolute;
+  background-color: #ffff;
+  width: 300px;
+  height: 400px;
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.15);
+  border: 1px solid #eee;
+  border-radius: 10px;
+  z-index: 3;
+  right: -10px;
+  padding: 20px;
+  top: 57px;
+}
+
+.dropdown-hide {
+  display: none;
+}
+
+.dropdown-show {
+  display: block;
+}
+
+.drop-item {
+  display: grid;
+  justify-content: space-between;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.drop-link {
+  width: 84px;
+  height: 84px;
+  text-align: center;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #555;
+  margin-bottom: 10px;
+}
+.drop-link img {
+  width: 35px;
+  margin: auto;
+  margin-top: 10px;
+}
+.drop-link p {
+  color: #202124;
+  display: inline-block;
+  font-family: 'Roboto',Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.09px;
+  line-height: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 76px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.drop-link:hover {
+  background-color: #edf7fc;
+}
+
+.dropdown:hover .profile-hightlight-dropdown {
+  display: block;
+}
+
+.fa-th:hover {
+  background: #eee;
+}
+

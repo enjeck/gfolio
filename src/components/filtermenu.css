@@ -1,0 +1,41 @@
+.filter-menu-items {
+  margin-left: 180px;
+}
+.filter-menu {
+  padding: 0 20px;
+  border-bottom: 1px solid #eee;
+  margin: 0;
+}
+
+.filter-menu-item {
+  color: #5f6368;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  padding: 10px 2px;
+  margin: 0 10px;
+}
+
+.filter-menu-item.item-active {
+  color: blue;
+  border-bottom: 3px solid blue;
+}
+
+@media screen and (max-width: 768px) {
+  .filter-menu {
+    padding: 0 10px;
+  }
+
+  .filter-menu-items {
+    margin-left: 0;
+  }
+
+  .filter-menu-item .icon {
+    display: none;
+  }
+
+  .filter-menu-item.item-active {
+    color: black;
+    border-bottom: 3px solid black;
+  }
+}

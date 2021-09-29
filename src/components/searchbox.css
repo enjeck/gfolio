@@ -1,0 +1,152 @@
+/* Select Search */
+
+.search-box {
+  position: relative;
+  margin: 0 20px;
+}
+.fa {
+  position: absolute;
+  z-index: 2;
+  font-size: 15px;
+  color: #aaa;
+}
+.fa-search {
+  top: 15px;
+  left: 20px;
+}
+.clear-icon {
+  color: #777;
+  font-size: 20px;
+  top: 0;
+  right: 0;
+  padding: 15px;
+  cursor: pointer;
+  display: none;
+}
+
+/**
+ * Main wrapper
+ */
+.search-cont {
+  width: 100%;
+  position: absolute;
+}
+.search {
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+  border: 1px solid #eee;
+  border-radius: 30px;
+  position: relative;
+  background: #fff;
+}
+
+.search:hover {
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search *,
+.search *::after,
+.search *::before {
+  box-sizing: inherit;
+}
+
+/**
+* Value wrapper
+*/
+.select-search__value {
+  position: relative;
+  z-index: 1;
+}
+
+.search-value::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: calc(50% - 9px);
+  right: 19px;
+  width: 11px;
+  height: 11px;
+}
+
+/**
+* Input
+*/
+.search-input {
+  display: block;
+  height: 46px;
+  width: 98%;
+  margin: auto;
+  padding: 0 40px 0 36px;
+  background: #fff;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 14px;
+  text-align: left;
+  text-overflow: ellipsis;
+  line-height: 36px;
+  -webkit-appearance: none;
+}
+
+.search-input::-webkit-search-decoration,
+.search-input::-webkit-search-cancel-button,
+.search-input::-webkit-search-results-button,
+.search-input::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+}
+
+.search-input:not([readonly]):focus {
+  cursor: initial;
+}
+
+/**
+* Options wrapper
+*/
+.search-select {
+  display: none;
+}
+
+/**
+* Options
+*/
+.search-options {
+  list-style: none;
+  padding-left: 0;
+  border-top: 1px solid #eee;
+  background: #eee;
+  margin-top: 0px;
+}
+
+/**
+* Option
+*/
+.search-option {
+  display: block;
+  height: 36px;
+  width: 100%;
+  padding: 0 16px;
+  background: #fff;
+  border: none;
+  outline: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  text-align: left;
+  cursor: default;
+  color: #784ca4;
+}
+
+.search-option:hover {
+  background: #eee;
+}
+
+.search-option a {
+  text-decoration: none;
+  padding-right: 40%;
+  line-height: 30px;
+}
+.remove-btn:hover {
+  text-decoration: underline;
+  color: blue !important;
+}
