@@ -24,11 +24,11 @@ function NotFound() {
         <div className="suggest">
           <p> Did you mean: </p>
           <div className="suggestions">
-            <a href="/all"> all </a>
-            <a href="/about"> about </a>
-            <a href="/works"> works </a>
-            <a href="/social"> social </a>
-            <a href="/writing"> writing </a>
+            <a href="/#/all"> all </a>
+            <a href="/#/about"> about </a>
+            <a href="/#/works"> works </a>
+            <a href="/#/social"> social </a>
+            <a href="/#/writing"> writing </a>
           </div>
         </div>
         <div className="notfound-details">
