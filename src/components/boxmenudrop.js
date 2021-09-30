@@ -1,5 +1,6 @@
 import "./boxmenudrop.css";
 import React, { useState, useRef, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTh } from "@fortawesome/free-solid-svg-icons";
 import logo from "../images/e-logo.png"
@@ -48,41 +49,41 @@ const BoxMenuDrop = () => {
         }
       >
         <div className="drop-item">
-          <a className="drop-link" href="/">
+          <Link className="drop-link" to="/">
             <img
               src={logo}
               alt=""
             />
             <p> Search </p>
-          </a>
-          <a className="drop-link" href="/">
+          </Link>
+          <Link  className="drop-link" to="/about">
             <img
               src={about}
               alt=""
             />
             <p> About </p>
-          </a>
-          <a className="drop-link" href="/works">
+          </Link >
+          <Link  className="drop-link" to="/works">
             <img
               src={suitcase}
               alt=""
             />
             <p> Works </p>
-          </a>
-          <a className="drop-link" href="/blog">
+          </Link >
+          <Link  className="drop-link" to="/blog">
             <img
               src={news}
               alt=""
             />
             <p> Blog </p>
-          </a>
-          <a className="drop-link" href="/images">
+          </Link >
+          <Link  className="drop-link" to="/images">
             <img
               src={img}
               alt=""
             />
             <p> Images </p>
-          </a>
+          </Link >
           <a className="drop-link" href="mailto:enjeckc1e0@gmail.com">
             <img
               src={email}

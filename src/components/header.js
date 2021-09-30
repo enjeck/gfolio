@@ -1,5 +1,6 @@
 import React from "react";
 import "./header.css";
+import { Link } from "react-router-dom";
 import Logo from "./logo";
 import TopSearchBox from "./topSearchbox";
 import BoxMenuDrop from "./boxmenudrop";
@@ -9,9 +10,9 @@ const Header = () => {
   return (
     <div className="menu">
       <div className="menu-section">
-        <a href="/" style={{ textDecoration: "none" }}>
+        <Link to="/" style={{ textDecoration: "none" }}>
           <Logo />
-        </a>
+        </Link>
         <div className="topmenu-menu-search menu-search">
           <TopSearchBox />
         </div>

@@ -1,4 +1,5 @@
 import "./profilemenudrop.css";
+import { Link } from "react-router-dom";
 import React, { useState, useRef, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUserPlus } from "@fortawesome/free-solid-svg-icons";
@@ -60,16 +61,16 @@ const ProfileMenuDrop = () => {
           <p className="detail-text"> enjeckc1e0@gmail.com </p>
           <a href="https://enjeck.com"> View Another Design </a>
         </div>
-        <a className="second-detail" href="/#/about">
+        <Link className="second-detail" to="/about">
           <FontAwesomeIcon className="fa-user-plus" icon={faUserPlus} />
           <p> More about me </p>
-        </a>
+        </Link>
         <div className="third-detail">
           <a href="https://github.com/enjeck"> GitHub</a>
         </div>
         <div className="fourth-detail">
           <a href="https://github.com/PROTechThor/gfolio"> View code </a> <span> • </span>
-          <a href="/#/blog"> Blog & news </a>
+          <Link to="/blog"> Blog & news </Link>
         </div>
       </div>
     </div>

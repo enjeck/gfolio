@@ -1,15 +1,13 @@
 import "../styles.css";
 import "../search.css";
 import React, { Component, useEffect } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTh, faUserPlus } from "@fortawesome/free-solid-svg-icons";
 import Logo from "../components/logo";
 import SearchBox from "../components/searchbox";
 import BoxMenuDrop from "../components/boxmenudrop";
 import ProfileMenuDrop from "../components/profilemenudrop";
 import { useHistory } from "react-router-dom";
 import { Content } from "../data/content";
-import MobileSearch from "../components/mobileSearch";
+import { Link } from "react-router-dom";
 
 function Home() {
   const history = useHistory();
@@ -91,9 +89,9 @@ function Home() {
         </div>
         <div className="footer-links">
           <div className="footer-links-section">
-            <a href="/#/about"> About </a>
-            <a href="/#/projects"> Projects </a>
-            <a href="/#/blog"> Blog</a>
+            <Link to="/about"> About </Link>
+            <Link to="/projects"> Projects </Link>
+            <Link to="/blog"> Blog</Link>
             <a href="mailto:enjeckc1e0@gmail.com"> Email </a>
           </div>
           <div className="footer-links-section">
