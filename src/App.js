@@ -2,7 +2,7 @@ import "./styles.css";
 import "./search.css";
 import React, { Component } from "react";
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Route,
   Switch,
   Link,
