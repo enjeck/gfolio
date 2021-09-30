@@ -112,7 +112,7 @@ const MobileSearch = () => {
             <input
               placeholder=" "
               autoComplete="on"
-              class="mobile-search-input"
+              className="mobile-search-input"
               defaultValue={val}
               onChange={clearValue}
             />

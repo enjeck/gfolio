@@ -58,9 +58,9 @@ const ProfileMenuDrop = () => {
           />
           <p className="detail-text"> Enjeck Cleopatra </p>
           <p className="detail-text"> enjeckc1e0@gmail.com </p>
-          <a href="/"> View My Other Website </a>
+          <a href="https://enjeck.com"> View Another Design </a>
         </div>
-        <a className="second-detail" href="/about">
+        <a className="second-detail" href="/#/about">
           <FontAwesomeIcon className="fa-user-plus" icon={faUserPlus} />
           <p> More about me </p>
         </a>
@@ -69,7 +69,7 @@ const ProfileMenuDrop = () => {
         </div>
         <div className="fourth-detail">
           <a href="https://github.com/PROTechThor/gfolio"> View code </a> <span> • </span>
-          <a href="/blog"> Blog & news </a>
+          <a href="/#/blog"> Blog & news </a>
         </div>
       </div>
     </div>

@@ -64,6 +64,7 @@ const TopSearchBox = () => {
       document.querySelector(".search-select").style.display = "none";
     }
     document.querySelector(".fa-search-left").style.display = "block";
+    document.querySelector(".mobile-search-input").focus()
   }
 
   function hideOptions() {
@@ -159,7 +160,7 @@ const TopSearchBox = () => {
               <input
                 placeholder=" "
                 autoComplete="on"
-                class="search-input"
+                className="search-input"
                 defaultValue={val}
                 onFocus={showOptions}
                 onBlur={hideOptions}

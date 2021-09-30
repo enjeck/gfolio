@@ -9,9 +9,9 @@ const Footer = () => {
       </div>
       <div className="footer-links">
         <div className="footer-links-section">
-          <a href="/about"> About </a>
-          <a href="/projects"> Projects </a>
-          <a href="/blog"> Blog</a>
+          <a href="/#/about"> About </a>
+          <a href="/#/projects"> Projects </a>
+          <a href="/#/blog"> Blog</a>
           <a href="mailto:enjeckc1e0@gmail.com"> Email </a>
         </div>
       </div>
