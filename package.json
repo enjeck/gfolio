@@ -8,7 +8,6 @@
     "google",
     "portfolio"
   ],
-  "homepage": "gfolio.enjeck.com",
   "main": "src/index.js",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "1.2.36",
