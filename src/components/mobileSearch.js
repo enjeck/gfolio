@@ -1,5 +1,5 @@
 import "./mobileSearch.css";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faSearch,
@@ -82,6 +82,8 @@ const MobileSearch = () => {
       if (event.keyCode === 13) {
         event.preventDefault();
         searchWebsite();
+        document.querySelector("body").style.height = "100%";
+        document.querySelector("body").style.overflow = "scroll";
       }
     });
 
@@ -97,13 +99,34 @@ const MobileSearch = () => {
 
   function goBack() {
     document.querySelector(".mobile-search-box").style.display = "none";
+    document.querySelector("body").style.height = "100%";
+    document.querySelector("body").style.overflow = "scroll";
   }
+
+  function useOutsideHandler(ref) {
+    useEffect(() => {
+      function handleClickOutside(event) {
+        if (ref.current && !ref.current.contains(event.target)) {
+          document.querySelector("body").style.height = "100%";
+       document.querySelector("body").style.overflow = "scroll";
+        }
+      }
+
+      document.addEventListener("mousedown", handleClickOutside);
+      return () => {
+        document.removeEventListener("mousedown", handleClickOutside);
+      };
+    }, [ref]);
+  }
+
+  const wrapperSearchRef = useRef(null);
+  useOutsideHandler(wrapperSearchRef);
 
   return (
     <div className="mobile-search-box">
       <div className="mobile-search-cont">
         <div className="mobile-search">
-          <div className="mobile-search-value">
+          <div className="mobile-search-value" ref={wrapperSearchRef}>
             <FontAwesomeIcon
               className="searchbar-icon back-icon"
               icon={faArrowLeft}

@@ -8,11 +8,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import {
   BrowserRouter as Router,
-  Route,
-  Switch,
   Link,
-  Redirect,
-  withRouter,
   useHistory
 } from "react-router-dom";
 import MobileSearch from "./mobileSearch";
@@ -63,6 +59,8 @@ const SearchBox = () => {
     cursor: "pointer"
   };
 
+  const [isSearchActive, setSearchActive] = useState("false");
+
   function showOptions() {
     let el = document.querySelector(".search-select");
     el.style.display = "block";
@@ -72,6 +70,13 @@ const SearchBox = () => {
       document.querySelector(".mobile-search-box").style.display = "block";
       /* Hide other search options on mobile screens */
       document.querySelector(".search-select").style.display = "none";
+
+      /* Hide body */
+      document.querySelector("body").style.height = "100vh";
+      document.querySelector("body").style.overflow = "hidden";
+
+      /* Focus on input */
+      document.querySelector(".mobile-search-input").focus()
     }
   }
 
@@ -180,7 +185,7 @@ const SearchBox = () => {
               <input
                 placeholder=" "
                 autoComplete="on"
-                class="search-input"
+                className="search-input"
                 defaultValue={val}
                 onFocus={showOptions}
                 onBlur={hideOptions}

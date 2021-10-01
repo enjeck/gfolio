@@ -59,7 +59,7 @@ const ProfileMenuDrop = () => {
           />
           <p className="detail-text"> Enjeck Cleopatra </p>
           <p className="detail-text"> enjeckc1e0@gmail.com </p>
-          <a href="https://enjeck.com"> View Another Design </a>
+          <a href="https://enjeck.com"> View Another Website Design </a>
         </div>
         <Link className="second-detail" to="/about">
           <FontAwesomeIcon className="fa-user-plus" icon={faUserPlus} />

@@ -49,11 +49,11 @@ function Home() {
   return (
     <div className="home main">
       <div className="top-menu">
-        <span className="top-menu-item">
+        <span className="top-menu-item no-show-mobile">
           {" "}
           <a href="mailto:enjeckc1e0@gmail.com"> Email </a>
         </span>
-        <span className="top-menu-item">
+        <span className="top-menu-item no-show-mobile">
           {" "}
           <a href="https://github.com/enjeck"> GitHub </a>
         </span>

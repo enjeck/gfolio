@@ -82,15 +82,35 @@ a:focus {
 }
 
 @media screen and (max-width: 768px) {
-  .search-btns {
+  .search-btns, .no-show-mobile {
     display: none;
   }
+
+  .top-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    font-size: 13px;
+    margin-top: 10px;
+    margin-right: 10px;
+    position: absolute;
+}
+
+.main.home .search-container {
+  max-width: 100%;
+  padding-bottom: 30vh;
+}
+
+.search-input {
+  height: 40px !important;
+}
 }
 
 @media screen and (max-width: 500px) {
-  .frontpage-logo .logo-text h1 {
-    font-size: 3.5rem;
-  }
+
+
+
 }
 
 

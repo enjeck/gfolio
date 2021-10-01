@@ -53,6 +53,8 @@ const TopSearchBox = () => {
     cursor: "pointer"
   };
 
+  const [isSearchActive, setSearchActive] = useState("false");
+
   function showOptions() {
     let el = document.querySelector(".search-select");
     el.style.display = "block";
@@ -62,9 +64,16 @@ const TopSearchBox = () => {
       document.querySelector(".mobile-search-box").style.display = "block";
       /* Hide other search options on mobile screens */
       document.querySelector(".search-select").style.display = "none";
+      
+      /* Hide body */
+      document.querySelector("body").style.height = "100vh";
+      document.querySelector("body").style.overflow = "hidden";
+
+      /* Focus on input */
+      document.querySelector(".mobile-search-input").focus()
     }
     document.querySelector(".fa-search-left").style.display = "block";
-    document.querySelector(".mobile-search-input").focus()
+  
   }
 
   function hideOptions() {

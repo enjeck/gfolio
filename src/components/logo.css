@@ -23,3 +23,13 @@
 .green {
   color: #34a852;
 }
+
+@media screen and (max-width: 500px) {
+  .search-logo {
+    margin-bottom: 10px;
+  }
+  .frontpage-logo .logo-text {
+    font-size: 1.8rem;
+    letter-spacing: -0.1rem;
+  }
+}
