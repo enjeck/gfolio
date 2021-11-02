@@ -14,21 +14,7 @@ import {
 import MobileSearch from "./mobileSearch";
 import { Content } from "../data/content";
 
-const SearchBox = () => {
-  const options = [
-    {
-      name: "everything about you",
-      value: "all"
-    },
-    {
-      name: "about",
-      value: "about"
-    },
-    { name: "works", value: "works" },
-    { name: "writing", value: "writing" },
-    { name: "images", value: "images" },
-    { name: "social", value: "social" }
-  ];
+const SearchBox = (props) => {
 
   // Get url pathname to use as search value
   const urlPathname = window.location.pathname;
@@ -159,6 +145,13 @@ const SearchBox = () => {
   // I'm Feeling Lucky search
   function feelingLucky() {
     let path = document.querySelector(".search-input").value;
+
+    // Route to random page if search input is empty
+    if (!path) {
+      history.push(`/${props.options[Math.floor(Math.random() * props.options.length)].value}`);
+      return;
+    }
+
     /* Get all elements matching the search term */
     const item = Content.filter((item) => item.category === path);
     // Get the link of the first match
@@ -194,7 +187,7 @@ const SearchBox = () => {
             </div>
             <div className="search-select">
               <div className="search-options">
-                {options.map((option) => (
+                {props.options.map((option) => (
                   <div className="search-option" type="button">
                     <span>
                       <FontAwesomeIcon

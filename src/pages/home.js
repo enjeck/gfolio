@@ -12,6 +12,21 @@ import { Link } from "react-router-dom";
 function Home() {
   const history = useHistory();
 
+  const options = [
+    {
+      name: "everything about you",
+      value: "all"
+    },
+    {
+      name: "about",
+      value: "about"
+    },
+    { name: "works", value: "works" },
+    { name: "writing", value: "writing" },
+    { name: "images", value: "images" },
+    { name: "social", value: "social" }
+  ];
+
   // Website search
   const searchWebsite = () => {
     let path = document.querySelector(".search-input").value;
@@ -34,8 +49,16 @@ function Home() {
   // I'm Feeling Lucky search
   function feelingLucky() {
     let path = document.querySelector(".search-input").value;
+
+    // Route to random page if search input is empty
+    if (!path) {
+      history.push(`/${options[Math.floor(Math.random() * options.length)].value}`);
+      return;
+    }
+
     /* Get all elements matching the search term */
     const item = Content.filter((item) => item.category === path);
+
     // Get the link of the first match
     // Redirect to first match, if it exists
     if (item[0]) {
@@ -65,7 +88,7 @@ function Home() {
         <div className="frontpage-logo">
           <Logo />
         </div>
-        <SearchBox />
+          <SearchBox options={options} />
         <div className="search-btns">
           <input
             className="search-btn sw"
