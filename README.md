@@ -1,25 +1,23 @@
 ## gfolio | Google Search inspired portfolio website
 
-Built with ReactJS.
+This is a personal website simulating Google Search. Built with ReactJS.
 
 Try it online: https://gfolio.enjeck.com/
 
-### How it looks
 <kbd>
 <img src="screenshots/gfolio.gif"  />
  </kbd>
-<kbd>
-<img src="screenshots/gfolio1.png"/>
-</kbd>
-<kbd>
-<img src="screenshots/gfolio2.png"/>
-</kbd>
-<kbd>
-<img src="screenshots/gfolio3.png"/>
-</kbd>
-<kbd>
-<img src="screenshots/gfolio4.png"/>
-</kbd>
+
+### Usage
+```
+npm install
+
+# Run the app in the development mode. Open http://localhost:3000 to view it in the browser.
+npm start
+
+# build for production to the `build` folder
+npm run build
+```
 
 ### License
 
