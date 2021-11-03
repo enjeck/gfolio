@@ -10,6 +10,7 @@ import { faClock } from "@fortawesome/free-regular-svg-icons";
 import { BrowserRouter as Router, Link, useHistory } from "react-router-dom";
 
 const MobileSearch = () => {
+
   const options = [
     {
       name: "everything about you",
@@ -35,9 +36,9 @@ const MobileSearch = () => {
   }
 
   useEffect(() => {
+    // Show the clear button when the search bar is nonempty. Otherwise, hide it. 
     const clearBtn = document.querySelector(".mobile-clear-icon");
     let input = document.querySelector(".mobile-search-input").value;
-    //console.log(input);
     if (input) {
       clearBtn.style.display = "none";
     } else {
@@ -57,7 +58,7 @@ const MobileSearch = () => {
     input.value = "";
   }
 
-  // Search Website on Enter key press
+  // Search Website by pushing search term into url
   const history = useHistory();
   const searchWebsite = () => {
     let path = document.querySelector(".mobile-search-input").value;
@@ -77,16 +78,19 @@ const MobileSearch = () => {
   };
 
   useEffect(() => {
+    // Trigger search when enter key is pressed
     let inputField = document.querySelector(".mobile-search-input");
     inputField.addEventListener("keyup", function (event) {
       if (event.keyCode === 13) {
         event.preventDefault();
         searchWebsite();
+        // Show the enter screen, which was cropped while the search screen was active
         document.querySelector("body").style.height = "100%";
         document.querySelector("body").style.overflow = "scroll";
       }
     });
 
+    // Only show the close icon when the search bar is nonempty
     let closeIcon = document.querySelector(".mobile-clear-icon");
     let searchValue = document.querySelector(".mobile-search-input").value;
     if (searchValue) {
@@ -97,14 +101,17 @@ const MobileSearch = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  // Leave the mobile search area when the back icon is pressed
   function goBack() {
     document.querySelector(".mobile-search-box").style.display = "none";
+    // Unhide the rest of the body
     document.querySelector("body").style.height = "100%";
     document.querySelector("body").style.overflow = "scroll";
   }
 
   function useOutsideHandler(ref) {
     useEffect(() => {
+      // Unhide the rest of the body when user leaves the mobile search area
       function handleClickOutside(event) {
         if (ref.current && !ref.current.contains(event.target)) {
           document.querySelector("body").style.height = "100%";

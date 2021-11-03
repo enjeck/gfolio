@@ -20,17 +20,6 @@ const FilterMenu = () => {
           className="filter-menu-item"
           to="/all"
           activeClassName="item-active"
-          // isActive={() => {
-          //     let activeItems = document.querySelector('.item-active');
-          //   console.log(activeItems)
-          //   if (activeItems == null) {
-          //     return true;
-          //   }
-          //   else {
-          //     return false;
-          //   }
-          //   }
-          // }
         >
           <FontAwesomeIcon className="icon" icon={faSearch} />
           <span> All </span>

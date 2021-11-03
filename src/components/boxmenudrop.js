@@ -15,10 +15,13 @@ import about from "../images/info.png"
 
 const BoxMenuDrop = () => {
   const [isActive, setActive] = useState("false");
+
+  // Toggle the dropdown
   const handleToggle = () => {
     setActive(!isActive);
   };
 
+  // Hide the dropdown when user clicks outside the element
   function useOutsideHandler(ref) {
     useEffect(() => {
       function handleClickOutside(event) {

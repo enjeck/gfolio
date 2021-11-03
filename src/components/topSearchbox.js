@@ -108,7 +108,7 @@ const TopSearchBox = () => {
     input.value = "";
   }
 
-  // Search Website on Enter key press
+  // Search Website, which works by pushing search term to the url
   const history = useHistory();
   const searchWebsite = () => {
     let path = document.querySelector(".search-input").value;
@@ -117,6 +117,7 @@ const TopSearchBox = () => {
     }
   };
 
+  // Only show clear button when search input is nonempty
   const clearValue = () => {
     let closeIcon = document.querySelector(".clear-icon");
     let searchValue = document.querySelector(".search-input").value;
@@ -132,6 +133,7 @@ const TopSearchBox = () => {
   };
 
   useEffect(() => {
+    // Trigger search when enter key is pressed
     let inputField = document.querySelector(".search-input");
     inputField.addEventListener("keyup", function (event) {
       if (event.keyCode === 13) {

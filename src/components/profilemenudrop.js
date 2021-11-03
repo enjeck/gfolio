@@ -6,10 +6,12 @@ import { faUserPlus } from "@fortawesome/free-solid-svg-icons";
 
 const ProfileMenuDrop = () => {
   const [isProfileActive, setProfileActive] = useState("false");
+  // Toggle the dropdown
   const handleToggle = () => {
     setProfileActive(!isProfileActive);
   };
 
+   // Hide the dropdown when user clicks outside the element
   function useOutsideHandler(ref) {
     useEffect(() => {
       function handleClickOutside(event) {

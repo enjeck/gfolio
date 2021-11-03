@@ -57,11 +57,12 @@ const SearchBox = (props) => {
       /* Hide other search options on mobile screens */
       document.querySelector(".search-select").style.display = "none";
 
-      /* Hide body */
+      /* Hide body when mobile search area is active */
       document.querySelector("body").style.height = "100vh";
       document.querySelector("body").style.overflow = "hidden";
 
-      /* Focus on input */
+      /* Focus on search input so that user can begin typing 
+      immediately without having to click on it first*/
       document.querySelector(".mobile-search-input").focus()
     }
   }
@@ -77,7 +78,7 @@ const SearchBox = (props) => {
   useEffect(() => {
     const clearBtn = document.querySelector(".clear-icon");
     let input = document.querySelector(".search-input").value;
-    //console.log(input);
+    // Only show the clear button when the input field is nonempty
     if (input) {
       clearBtn.style.display = "none";
     } else {
@@ -97,11 +98,13 @@ const SearchBox = (props) => {
     input.value = "";
   }
 
+  // Show the clear button when the search input field is nonempty
   const clearValue = () => {
     let closeIcon = document.querySelector(".clear-icon");
     let searchValue = document.querySelector(".search-input").value;
     if (searchValue) {
       closeIcon.style.display = "inline-block";
+      // When the search input is not empty, give it a subtle box shadow
       document.querySelector(
         ".search"
       ).style.boxShadow = `1px 1px 6px rgba(0,0,0,0.2)`;
@@ -112,6 +115,7 @@ const SearchBox = (props) => {
   };
 
   useEffect(() => {
+    // Trigger search when enter key is pressed
     let inputField = document.querySelector(".search-input");
     inputField.addEventListener("keyup", function (event) {
       if (event.keyCode === 13) {
@@ -120,6 +124,7 @@ const SearchBox = (props) => {
       }
     });
 
+    // As soon as the page loads, show the clear button if the search input field is nonempty
     let closeIcon = document.querySelector(".clear-icon");
     let searchValue = document.querySelector(".search-input").value;
     if (searchValue) {
@@ -133,7 +138,7 @@ const SearchBox = (props) => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  // Search Website on Enter key press
+  // "Search" Website, which works by pushing the search term to the url and redirecting to it
   const history = useHistory();
   const searchWebsite = () => {
     let path = document.querySelector(".search-input").value;

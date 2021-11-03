@@ -12,6 +12,8 @@ import { Link } from "react-router-dom";
 function Home() {
   const history = useHistory();
 
+  // These values will be shown in the search dropdown
+  // The name property is the actual text and the value property is the link
   const options = [
     {
       name: "everything about you",
@@ -30,6 +32,7 @@ function Home() {
   // Website search
   const searchWebsite = () => {
     let path = document.querySelector(".search-input").value;
+    // When search is triggered, add the value entered into the search bar to the url
     if (path) {
       history.push(path);
     }
@@ -37,6 +40,7 @@ function Home() {
 
   useEffect(() => {
     let inputField = document.querySelector(".search-input");
+    //Trigger search when the enter key is pressed
     inputField.addEventListener("keyup", function (event) {
       if (event.keyCode === 13) {
         event.preventDefault();
