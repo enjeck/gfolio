@@ -1,4 +1,5 @@
 import React from "react";
+import Head from "next/head";
 import Link from "next/link";
 import AllResultsCard from "../components/allResultsCard";
 import Header from "../components/header";
@@ -17,6 +18,12 @@ function NotFound() {
 
   return (
     <div className="main">
+      <Head>
+        <title>Page Not Found - 404 | Gfolio</title>
+        <meta name="description" content="The page you're looking for doesn't exist. Browse suggested pages or use search to find what you need." />
+        <meta name="robots" content="noindex, nofollow" />
+      </Head>
+      <h1 className="visually-hidden">Page Not Found - 404 Error</h1>
       <Header />
       <FilterMenu />
       <div className="all-results-container notfound-page">

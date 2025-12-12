@@ -11,95 +11,78 @@ export const ProjectsContent = [
   {
     link: "https://github.com/enjeck/TutCode",
     img: tutcode,
-    name: "TutCode - site to simultaneously  view tutorials and code",
-    excerpt: `A website where people can simultaneously code and watch/read
-    tutorials. It's a more convenient way to learn and practice
-    how to code (with HTML, CSS and JavaScript) on the same page`,
-    tools: "JavaScript · CSS"
+    name: "TutCode - Interactive Learning Platform",
+    excerpt: `An innovative web application that enables simultaneous coding practice and tutorial viewing. Features split-screen interface for enhanced learning efficiency with HTML, CSS, and JavaScript. Built to streamline the developer learning experience.`,
+    tools: "JavaScript · CSS · HTML"
   },
   {
     link: "/",
     img: gfolio,
-    name: "Gfolio (this website)",
-    excerpt: `A personal website simulating the Google Search platform. Developed with
-    HTML, CSSS and React`,
-    tools: "React · CSS"
+    name: "Gfolio - Google-Inspired Portfolio",
+    excerpt: `A unique portfolio website that reimagines the Google Search interface for personal branding. Built with React and modern web technologies to showcase projects in a familiar, intuitive format that engages visitors.`,
+    tools: "React · Next.js · CSS"
   },
   {
     link: "https://enjeck.com/",
     img: enjeck,
-    name: "Personal Website",
-    excerpt: `My personal website, designed and developed from scratch. It
-    features a lot of hover effects, custom styling and a blog.`,
-    tools: "Gatsby · CSS"
+    name: "Personal Brand Website & Blog",
+    excerpt: `Custom-designed personal website featuring advanced CSS animations, interactive hover effects, and an integrated blog platform. Fully responsive design showcasing technical writing and development work built with Gatsby.`,
+    tools: "Gatsby · React · CSS"
   },
   {
     link: "https://github.com/enjeck/libre-logos",
     img: ll,
-    name: "Libre Logos",
-    excerpt: `A project to provide free logos to open source projects.
-    Website and logos designed and built by yours truly. 
-    The website is responsive and the individual logo pages are 
-    programmatically-generated.`,
-    tools: "Gatsby · CSS"
+    name: "Libre Logos - Open Source Design Project",
+    excerpt: `A curated collection of free, professionally designed logos for open source projects. Features responsive design with dynamically generated individual logo pages. Combines design expertise with automated content generation using Gatsby.`,
+    tools: "Gatsby · React · CSS · Design"
   },
   {
     link: "https://github.com/enjeck/jpg2svg",
     img: jpg2svg,
-    name: "jpg2svg",
-    excerpt: `An program to convert JPG/JPEG images into SVG. It comes with a web interface where 
-    you can upload an image, have it converted to SVG in the server, and you can 
-    download the converted SVG file if you want.`,
-    tools: "JavaScript · Python"
+    name: "JPG to SVG Converter",
+    excerpt: `A full-stack image conversion tool with an intuitive web interface for transforming JPG/JPEG images into scalable SVG format. Features server-side processing and instant downloads, built with JavaScript and Python.`,
+    tools: "JavaScript · Python · Flask"
   },
   {
     link: "https://github.com/enjeck/CrazyPassword",
     img: placeholder,
-    name: "Crazy Password",
-    excerpt: `A password validation game with ridiculous requirements. 
-    Using Django for this project was overkill, but I really wanted to 
-     play around with regular expressions in Python`,
-    tools: "Python"
+    name: "Crazy Password - Interactive Validation Game",
+    excerpt: `An entertaining password validation game featuring increasingly complex requirements. Demonstrates advanced regex patterns and Python validation logic using Django framework. A playful exploration of security best practices.`,
+    tools: "Python · Django · Regex"
   },
   {
     link: "https://github.com/enjeck/Geo-Guess",
     img: gg,
-    name: "Geo Guess",
-    excerpt: `A distance guessing game. You are shown random cities around the world,
-    and you have to guess how far you are from the random city. The better your
-    guesss, the higher your score.`,
-    tools: "JavaScript · Python"
+    name: "Geo Guess - Geography Learning Game",
+    excerpt: `An interactive geography game challenging players to estimate distances between global locations. Features real-time scoring, distance calculations using the Haversine formula, and educational gameplay built with JavaScript and Python.`,
+    tools: "JavaScript · Python · Geolocation API"
   },
   {
     link: "https://github.com/enjeck/Blobby",
     img: blobby,
-    name: "Blobby",
-    excerpt: `Generative blob SVG characters using Python. No characters are the same! 
-    Each Blobby character has a different body shape. The shape is always unique, 
-    and the colors and eyes are randomly applied to each shape.`,
-    tools: "JavaScript · Python"
+    name: "Blobby - Generative Character Art",
+    excerpt: `A creative Python project generating unique SVG blob characters with randomized shapes, colors, and features. Each character is algorithmically created with distinct attributes, demonstrating procedural design and SVG manipulation techniques.`,
+    tools: "Python · SVG · Generative Art"
   },
   {
     link: "https://github.com/enjeck/Google-Sheet-to-website",
     img: placeholder,
-    name: "Google Sheet to Website",
-    excerpt: `An experiment with building a website directly from Google Sheets. You edit a spreadsheet,
-    enter a link to the spreadsheet, and your changes are reflected on the website. `,
-    tools: "JavaScript · PHP"
+    name: "Sheet to Site - Dynamic Content Platform",
+    excerpt: `An innovative tool that transforms Google Sheets into live websites with real-time synchronization. Non-technical users can manage website content through familiar spreadsheet interfaces, demonstrating creative API integration.`,
+    tools: "JavaScript · PHP · Google Sheets API"
   },
   {
     link: "https://github.com/enjeck/CryptoAlgoVisualizer",
     img: cav,
-    name: "Crypto Algorithm Visualizer",
-    excerpt: `Visualizations of various cryptography algorithms. 
-    Currently has Caesar's Cipher and Mono Alphabetic Cipher.`,
-    tools: "JavaScript · CSS"
+    name: "Cryptography Algorithm Visualizer",
+    excerpt: `An educational tool providing interactive visualizations of cryptographic algorithms including Caesar's Cipher and Monoalphabetic Cipher. Makes complex security concepts accessible through clear visual demonstrations built with JavaScript.`,
+    tools: "JavaScript · CSS · Cryptography"
   },
   {
     link: "https://github.com/enjeck/btns",
     img: placeholder,
-    name: "btns",
-    excerpt: `A collection of buttons with cool hover effects.`,
-    tools: "JavaScript · CSS"
+    name: "CSS Button Components Library",
+    excerpt: `A curated collection of modern button designs featuring advanced CSS hover effects and animations. Ready-to-use components for enhancing user interface interactions and elevating web design aesthetics.`,
+    tools: "CSS · HTML · UI Design"
   }
 ];

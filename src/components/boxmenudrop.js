@@ -54,56 +54,56 @@ const BoxMenuDrop = () => {
           <Link className="drop-link" href="/">
             <img
               src={logo}
-              alt=""
+              alt="Search icon"
             />
             <p> Search </p>
           </Link>
           <Link  className="drop-link" href="/about">
             <img
               src={about}
-              alt=""
+              alt="About icon"
             />
             <p> About </p>
           </Link >
           <Link  className="drop-link" href="/works">
             <img
               src={suitcase}
-              alt=""
+              alt="Works icon"
             />
             <p> Works </p>
           </Link >
           <Link  className="drop-link" href="/blog">
             <img
               src={news}
-              alt=""
+              alt="Blog icon"
             />
             <p> Blog </p>
           </Link >
           <Link  className="drop-link" href="/images">
             <img
               src={img}
-              alt=""
+              alt="Images icon"
             />
             <p> Images </p>
           </Link >
-          <a className="drop-link" href="mailto:enjeckc1e0@gmail.com">
+          <a className="drop-link" href="mailto:enjeckc1e0 at gmail dot com">
             <img
               src={email}
-              alt=""
+              alt="Email icon"
             />
             <p> Email </p>
           </a>
           <a className="drop-link" href="https://github.com/enjeck">
             <img
               src={gh}
-              alt=""
+              alt="GitHub icon"
             />
             <p> GitHub </p>
           </a>
           <a className="drop-link" href="https://www.linkedin.com/in/c1e0/">
             <img
               src={li}
-              alt=""
+              alt="LinkedIn icon"
             />
             <p> LinkedIn </p>
           </a>

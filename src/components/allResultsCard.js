@@ -3,6 +3,14 @@ import PropTypes from "prop-types";
 
 const AllResultsCard = ({ results }) => {
   const [filteredResults] = useState(results);
+  const [expandedItems, setExpandedItems] = useState({});
+  
+  const toggleExpanded = (index) => {
+    setExpandedItems(prev => ({
+      ...prev,
+      [index]: !prev[index]
+    }));
+  };
   
   function formatURL(u) {
     // Split a given url into its various parts
@@ -30,21 +38,38 @@ const AllResultsCard = ({ results }) => {
 
   return (
     <div className="results-content">
-      {filteredResults.map((item, index) => (
-        <div key={index} className="result-card">
-          <a href={`${item.link}`}>
-            <p> 
-             {/* Format URl with angle brackets between parts */}
-              {`${formatURL(item.link)[0]}`}  
-              {formatURL(item.link)[1].map((path, pathIndex) => (
-                <span key={pathIndex}>{` › ${path}`}</span>
-              ))  }
+      {filteredResults.map((item, index) => {
+        const isExpanded = expandedItems[index];
+        const isAboutCategory = item.category === "about";
+        const shouldTruncate = isAboutCategory && !isExpanded;
+        
+        return (
+          <div key={index} className="result-card">
+            <a href={`${item.link}`}>
+              <p> 
+               {/* Format URl with angle brackets between parts */}
+                {`${formatURL(item.link)[0]}`}  
+                {formatURL(item.link)[1].map((path, pathIndex) => (
+                  <span key={pathIndex}>{` › ${path}`}</span>
+                ))  }
+              </p>
+              <h3>{`${item.name}`}</h3>
+            </a>
+            <p className={`excerpt ${shouldTruncate ? 'truncated' : 'expanded'}`}>
+              {`${item.excerpt}`}
             </p>
-            <h3>{`${item.name}`}</h3>
-          </a>
-          <p className="excerpt">{`${item.excerpt}`}</p>
-        </div>
-      ))}
+            {isAboutCategory && (
+              <button 
+                className="see-more-btn" 
+                onClick={() => toggleExpanded(index)}
+                aria-expanded={isExpanded}
+              >
+                {isExpanded ? 'See less' : 'See more'}
+              </button>
+            )}
+          </div>
+        );
+      })}
     </div>
   );
 };

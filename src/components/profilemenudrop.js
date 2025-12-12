@@ -42,8 +42,8 @@ const ProfileMenuDrop = () => {
       />
       <div className="profile-hightlight-dropdown">
         <p> Portfolio Website </p>
-        <p> Enjeck Cleopatra </p>
-        <p> enjeckc1e0@gmail.com </p>
+        <p> Enjeck</p>
+        <p> enjeckc1e0 at gmail dot com </p>
       </div>
       <div
         className={
@@ -58,9 +58,9 @@ const ProfileMenuDrop = () => {
             src="https://i.pinimg.com/474x/ca/a9/35/caa9352cd119efe5641d6f7c3cc755fb.jpg"
             alt="profile"
           />
-          <p className="detail-text"> Enjeck Cleopatra </p>
-          <p className="detail-text"> enjeckc1e0@gmail.com </p>
-          <a href="https://enjeck.com"> View Another Website Design </a>
+          <p className="detail-text"> Enjeck</p>
+          <p className="detail-text"> enjeckc1e0 at gmail dot com </p>
+          <a href="https://enjeck.com"> My other website </a>
         </div>
         <Link className="second-detail" href="/about">
           <FontAwesomeIcon className="fa-user-plus" icon={faUserPlus} />

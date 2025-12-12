@@ -1,4 +1,5 @@
 import React, { Component, useEffect } from "react";
+import Head from "next/head";
 import Logo from "../components/logo";
 import SearchBox from "../components/searchbox";
 import BoxMenuDrop from "../components/boxmenudrop";
@@ -14,17 +15,17 @@ function Home() {
   // The name property is the actual text and the value property is the link
   const options = [
     {
-      name: "everything about you",
+      name: "all content",
       value: "all"
     },
     {
-      name: "about",
+      name: "about me",
       value: "about"
     },
-    { name: "works", value: "works" },
-    { name: "writing", value: "writing" },
-    { name: "images", value: "images" },
-    { name: "social", value: "social" }
+    { name: "projects", value: "works" },
+    { name: "technical writing", value: "writing" },
+    { name: "portfolio images", value: "images" },
+    { name: "connect with me", value: "social" }
   ];
 
   // Website search
@@ -73,10 +74,19 @@ function Home() {
 
   return (
     <div className="home main">
+      <Head>
+        <title>Gfolio - Freelance Web Developer & Technical Writer</title>
+        <meta name="description" content="Freelance developer specializing in React, Next.js, and modern web development. Creating dynamic, responsive websites with clean code and exceptional user experiences." />
+        <meta name="keywords" content="freelance developer, web development, React, Next.js, JavaScript, Python, technical writer, portfolio" />
+        <meta property="og:title" content="Gfolio - Freelance Web Developer & Technical Writer" />
+        <meta property="og:description" content="Professional freelance developer creating modern web applications with React and Next.js." />
+        <meta property="og:type" content="website" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
       <div className="top-menu">
         <span className="top-menu-item no-show-mobile">
           {" "}
-          <a href="mailto:enjeckc1e0@gmail.com"> Email </a>
+          <a href="mailto:enjeckc1e0 at gmail dot com"> Email </a>
         </span>
         <span className="top-menu-item no-show-mobile">
           {" "}
@@ -110,19 +120,19 @@ function Home() {
 
       <footer className="footer">
         <div className="country">
-          Cameroon
+          Earth
         </div>
         <div className="footer-links">
           <div className="footer-links-section">
             <Link href="/about"> About </Link>
             <Link href="/projects"> Projects </Link>
             <Link href="/blog"> Blog</Link>
-            <a href="mailto:enjeckc1e0@gmail.com"> Email </a>
+            <a href="mailto:enjeckc1e0 at gmail dot com"> Email </a>
           </div>
           <div className="footer-links-section">
             <a href="https://github.com/enjeck"> GitHub </a>
             <a href="https://www.linkedin.com/in/c1e0/"> LinkedIn </a>
-            <a href="mailto:enjeckc1e0@gmail.com"> Email </a>
+            <a href="mailto:enjeckc1e0 at gmail dot com"> Email </a>
             {/* <div className="settings-dropdown">
               <button className="settings-dropbtn"> Settings </button>
               <div className="settings-dropdown-content">

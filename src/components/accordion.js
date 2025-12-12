@@ -35,17 +35,16 @@ const AccordionComponent = () => {
               id="panel1a-header"
             >
               <Typography className={classes.heading}>
-                What are your hobbies?
+                What services do you offer?
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
-                I enjoy reading fiction stories and philosophy. 
-                When I'm not reading for leisure, I spend my free time 
-                writing about random stuff. I also like listening to music,
-                especially jip hop, R&B and drill. My favorite artists are
-                Juice WRLD, Lil Tecca, JayDaYoungan, Yungeen Ace, SL, 
-                Meekz Manny and Fredo. 
+                I specialize in building accessible, high-performance web applications using React, Next.js, 
+                and Gatsby. My services include: web accessibility audits and WCAG compliance implementation, 
+                SEO optimization and structured data integration, Core Web Vitals improvement and performance 
+                tuning, semantic HTML and ARIA implementation, custom web applications with full-stack capabilities, 
+                and technical consulting for inclusive design practices.
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -56,13 +55,15 @@ const AccordionComponent = () => {
               id="panel2a-header"
             >
               <Typography className={classes.heading}>
-                Are you open for work?
+                What is your typical project timeline?
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
-                Yes. I am always open to work on innovate projects with 
-                creative projects. 
+                Project timelines vary based on scope and complexity. A standard website typically 
+                takes 2 to 4 weeks, while larger applications may require 6 to 12 weeks. I provide 
+                detailed project proposals with clear milestones and deliverables. I maintain regular 
+                communication throughout development and always deliver on agreed deadlines.
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -73,12 +74,15 @@ const AccordionComponent = () => {
               id="panel3a-header"
             >
               <Typography className={classes.heading}>
-                What's the fastest way to reach you?
+                Are you currently accepting new projects?
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
-               Definitely email. Contact me at enjeckc1e0@gmail.com.
+                Yes, I am currently available for freelance projects. I work with startups, 
+                established businesses, and individual clients who need professional web development 
+                services. I am selective about the projects I take on to ensure I can deliver 
+                exceptional quality and maintain focus on each client's success.
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -89,13 +93,35 @@ const AccordionComponent = () => {
               id="panel4a-header"
             >
               <Typography className={classes.heading}>
-                What motivates you?
+                How can I get started working with you?
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
-              Meeting deadlines, targets or goals. mentoring and coaching others, learning new things, 
-              coming up with creative ideas to improve something, and making something new.
+                The best way to start is by sending me an email at enjeckc1e0 at gmail dot com with details 
+                about your project. Include your timeline, budget range, and any specific requirements. 
+                I typically respond within 24 hours and can schedule a consultation call to discuss 
+                your needs in detail and provide a customized proposal.
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+          <Accordion>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel5a-content"
+              id="panel5a-header"
+            >
+              <Typography className={classes.heading}>
+                What makes your approach different?
+              </Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>
+                I build websites that work for everyone. Every project I deliver meets WCAG 2.1 AA standards 
+                with proper semantic markup, keyboard navigation, and screen reader support. I optimize for 
+                Core Web Vitals, implement comprehensive SEO with structured data, and ensure fast page loads 
+                across all devices. My code is clean, well-documented, and maintainable. I combine technical 
+                excellence with accessibility-first thinking to create inclusive digital experiences.
               </Typography>
             </AccordionDetails>
           </Accordion>
