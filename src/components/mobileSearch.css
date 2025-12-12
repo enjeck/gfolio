@@ -1,0 +1,86 @@
+/* Select Search */
+
+.mobile-search-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
+  z-index: 5;
+  overflow: hidden;
+  display: none;
+}
+
+.mobile-search-select {
+  display: block !important;
+}
+
+.delete-icon {
+  position: relative;
+  color: #777;
+  font-size: 20px;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.mobile-search-cont {
+  width: 100%;
+  height: 100%;
+}
+
+.mobile-search-select {
+  width: 100%;
+  height: 100%;
+}
+
+.mobile-search-value {
+  width: 98%;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #ccc;
+  margin-left: 10px;
+}
+
+.mobile-search-value input {
+  flex: 1;
+  border: none;
+  font-size: 16px;
+}
+
+.mobile-search-value input:focus {
+  border: none;
+  outline: none;
+}
+.searchbar-icon {
+  padding: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  color: blue;
+}
+
+.mobile-clear-icon {
+  position: absolute;
+  right: 8px;
+  color: #777;
+}
+
+.mobile-search-option span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin: 0 10px;
+}
+
+.clock-icon {
+  font-size: 20px;
+  margin-right: 20px;
+  margin-left: 10px;
+  color: #333;
+}
+
+.mobile-search-option a {
+  color: #333;
+  text-decoration: none;
+}

@@ -1,0 +1,35 @@
+.logo-text {
+  font-size: 2.7rem;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  letter-spacing: -0.2rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  cursor: default;
+}
+.logo-text h1 {
+  line-height: 1rem;
+}
+.blue {
+  color: #4285f4;
+}
+.red {
+  color: #ea4335;
+}
+.yellow {
+  color: #fcbc05;
+}
+.green {
+  color: #34a852;
+}
+
+@media screen and (max-width: 500px) {
+  .search-logo {
+    margin-bottom: 10px;
+  }
+  .frontpage-logo .logo-text {
+    font-size: 1.8rem;
+    letter-spacing: -0.1rem;
+  }
+}
