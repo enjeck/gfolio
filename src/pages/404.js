@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Head from "next/head";
 import Link from "next/link";
 import AllResultsCard from "../components/allResultsCard";
@@ -10,14 +10,17 @@ import { useRouter } from "next/router";
 
 function NotFound() {
   const router = useRouter();
-  // Get url pathname to use as search value
-  const urlPathname = router.asPath;
-  var rx = /[^/](.*)/g;
-  var arr = rx.exec(urlPathname);
-  let val = " ";
-  if (arr) {
-    val = arr[0];
-  }
+  const [val, setVal] = useState(" ");
+
+  useEffect(() => {
+    if (!router.isReady) return;
+    const urlPathname = router.asPath;
+    var rx = /[^/](.*)/g;
+    var arr = rx.exec(urlPathname);
+    if (arr) {
+      setVal(arr[0]);
+    }
+  }, [router.isReady, router.asPath]);
 
   return (
     <div className="main">
