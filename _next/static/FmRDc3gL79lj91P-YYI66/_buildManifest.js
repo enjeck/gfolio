@@ -1,6 +1,6 @@
 self.__BUILD_MANIFEST = {
   "/": [
-    "static/chunks/b04ef3a38688793c.js"
+    "static/chunks/54861e89628d3b41.js"
   ],
   "/404": [
     "static/chunks/a33faacf2ac8773b.js"
@@ -9,10 +9,10 @@ self.__BUILD_MANIFEST = {
     "static/chunks/8194e69c61725353.js"
   ],
   "/about": [
-    "static/chunks/72e65dc65af45c9b.js"
+    "static/chunks/fb95751db47bc1f0.js"
   ],
   "/all": [
-    "static/chunks/163965bc931fc7f7.js"
+    "static/chunks/2aaa71b44ea0abe3.js"
   ],
   "/blog": [
     "static/chunks/bf789dea12b0125b.js"
@@ -30,13 +30,13 @@ self.__BUILD_MANIFEST = {
     "static/chunks/9b1c7d4a55e2aa6e.js"
   ],
   "/social": [
-    "static/chunks/6ceddc6da1966735.js"
+    "static/chunks/6e92cb02c54572af.js"
   ],
   "/works": [
-    "static/chunks/5ad668528fa81107.js"
+    "static/chunks/9ed0334acca3cc40.js"
   ],
   "/writing": [
-    "static/chunks/4fdbf64d1a378dbe.js"
+    "static/chunks/1724f46d491e3523.js"
   ],
   "__rewrites": {
     "afterFiles": [],
