@@ -17,14 +17,14 @@ export const ProjectsContent = [
     img: enjeck,
     name: "Personal Brand Website & Blog",
     excerpt: `Custom-designed personal website featuring advanced CSS animations, interactive hover effects, and an integrated blog platform. Fully responsive design showcasing technical writing and development work built with Next.js.`,
-    tools: "Gatsby · React · CSS"
+    tools: "Next.js · React · CSS"
   },
   {
     link: "https://enjeck.com/libre-logos/",
     img: ll,
     name: "Libre Logos - Open Source Design Project",
     excerpt: `A curated collection of free, professionally designed logos for open source projects. Features responsive design with dynamically generated individual logo pages. Combines design expertise with automated content generation using Next.js.`,
-    tools: "Gatsby · React · CSS · Design"
+    tools: "Next.js · React · CSS · Design"
   },
   {
     link: "https://github.com/enjeck/jpg2svg",
