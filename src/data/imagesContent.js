@@ -17,32 +17,32 @@ export const ImagesContent = [
   {
     link: "/",
     img: gfolio,
-    name: "Gfolio (this website)",
+    name: "Gfolio (this website) - Google-inspired portfolio website reimagining Google Search for personal branding.",
   },
   {
     link: "https://enjeck.com/",
     img: enjeck,
-    name: "Personal Website",
+    name: "Personal Website - custom designed personal website featuring advanced CSS animations, interactive hover effects, and an integrated blog platform.",
   },
   {
     link: "https://enjeck.com/libre-logos/",
     img: ll,
-    name: "Libre Logos",
+    name: "Libre Logos - open source design project",
   },
   {
     link: "https://github.com/enjeck/jpg2svg",
     img: jpg2svg,
-    name: "jpg2svg",
+    name: "jpg2svg - full-stack image conversion tool",
   },
   {
     link: "https://enjeck.com/Blobby/",
     img: blobby,
-    name: "Blobby",
+    name: "Blobby - random character art",
   },
   {
     link: "https://enjeck.com/btns",
     img: btns,
-    name: "btns",
+    name: "btns - CSS button components library",
   },
   {
     link: "https://github.com/enjeck",
