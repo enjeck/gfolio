@@ -13,10 +13,10 @@ function About() {
   return (
     <div className="main">
       <Head>
-        <title>About - Freelance Developer & Technical Writer | Gfolio</title>
+        <title>About - Software Engineer & Technical Writer | Gfolio</title>
         <meta name="description" content="Learn about my expertise in web development, technical skills, and professional background. Specializing in React, Next.js, and modern web technologies." />
-        <meta name="keywords" content="web developer, freelance developer, React, Next.js, Gatsby, technical writer, Cameroon" />
-        <meta property="og:title" content="About - Freelance Developer & Technical Writer" />
+        <meta name="keywords" content="web developer, software engineer, web developer, React, Next.js, Gatsby, technical writer, Cameroon" />
+        <meta property="og:title" content="About - Software Engineer & Technical Writer" />
         <meta property="og:description" content="Learn about my expertise in web development and technical writing." />
         <meta property="og:type" content="profile" />
       </Head>

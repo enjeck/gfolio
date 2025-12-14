@@ -2,7 +2,7 @@
 
 This guide will help you quickly customize your Gfolio portfolio. Follow these steps in order!
 
-## 📋 Checklist
+## Checklist
 
 - [ ] Update personal information
 - [ ] Add your skills
@@ -14,7 +14,7 @@ This guide will help you quickly customize your Gfolio portfolio. Follow these s
 - [ ] Test locally
 - [ ] Deploy!
 
-## 🚀 5-Minute Setup
+## 5-Minute Setup
 
 ### Step 1: Personal Info (2 minutes)
 
@@ -103,7 +103,7 @@ export const BLOG_POSTS = [
 ];
 ```
 
-## 📸 Adding Images
+## Adding Images
 
 1. Place your images in `public/images/`
 2. Reference them as `/images/filename.png` (with leading slash!)
@@ -112,7 +112,7 @@ export const BLOG_POSTS = [
    - Blog featured images: 1200x630px
    - Icons: 48x48px or 64x64px
 
-## ✅ Test Your Changes
+## Test Your Changes
 
 ```bash
 # Start the dev server
@@ -127,7 +127,7 @@ npm run dev
 # - Images (/images)
 ```
 
-## 🎨 Common Customizations
+## Common Customizations
 
 ### Change Colors
 

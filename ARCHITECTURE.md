@@ -2,7 +2,7 @@
 
 Visual representation of the new portfolio architecture.
 
-### 📁 Directory Structure
+### Directory Structure
 
 ```
 gfolio/
@@ -92,7 +92,7 @@ gfolio/
 └── postcss.config.mjs               # PostCSS configuration
 ```
 
-## 🏗️ System Architecture
+## System Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
@@ -179,7 +179,7 @@ gfolio/
         └─────────────────┘     └──────────────────┘
 ```
 
-## 🔒 Type Safety Flow
+## Type Safety Flow
 
 ```
 ┌──────────────────────────────────────────────────────────────┐

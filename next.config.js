@@ -4,9 +4,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  // Uncomment these for GitHub Pages deployment
-  // basePath: process.env.NODE_ENV === 'production' ? '/gfolio' : '',
-  // assetPrefix: process.env.NODE_ENV === 'production' ? '/gfolio/' : '',
+  basePath: '',
+  assetPrefix: '',
 }
 
 module.exports = nextConfig

@@ -74,11 +74,11 @@ function Home() {
   return (
     <div className="home main">
       <Head>
-        <title>Gfolio - Freelance Web Developer & Technical Writer</title>
-        <meta name="description" content="Freelance developer specializing in React, Next.js, and modern web development. Creating dynamic, responsive websites with clean code and exceptional user experiences." />
-        <meta name="keywords" content="freelance developer, web development, React, Next.js, JavaScript, Python, technical writer, portfolio" />
-        <meta property="og:title" content="Gfolio - Freelance Web Developer & Technical Writer" />
-        <meta property="og:description" content="Professional freelance developer creating modern web applications with React and Next.js." />
+        <title>Gfolio - Software Engineer & Technical Writer</title>
+        <meta name="description" content="Software Engineer specializing in React, Next.js, and modern web development. Creating dynamic, responsive websites with clean code and exceptional user experiences." />
+        <meta name="keywords" content="software engineer, web development, React, Next.js, JavaScript, Python, technical writer, portfolio" />
+        <meta property="og:title" content="Gfolio - Software Engineer & Technical Writer" />
+        <meta property="og:description" content="Professional software engineer creating modern web applications with React and Next.js." />
         <meta property="og:type" content="website" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
