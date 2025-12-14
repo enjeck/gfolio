@@ -11,8 +11,10 @@ const Footer = () => {
         <div className="footer-links-section">
           <Link href="/about"> About </Link>
           <Link href="/projects"> Projects </Link>
-          <Link href="/blog"> Writing </Link>
-          <a href="mailto:enjeckc1e0 at gmail dot com"> Contact </a>
+          <Link href="/blog"> Blog </Link>
+          <Link href="/experience"> Experience </Link>
+          <Link href="/education"> Education </Link>
+          <Link href="/contact"> Contact </Link>
         </div>
       </div>
     </footer>

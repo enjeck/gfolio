@@ -35,16 +35,13 @@ const AccordionComponent = () => {
               id="panel1a-header"
             >
               <Typography className={classes.heading}>
-                What services do you offer?
+                What is your professional background?
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
-                I specialize in building accessible, high-performance web applications using React, Next.js, 
-                and Gatsby. My services include: web accessibility audits and WCAG compliance implementation, 
-                SEO optimization and structured data integration, Core Web Vitals improvement and performance 
-                tuning, semantic HTML and ARIA implementation, custom web applications with full-stack capabilities, 
-                and technical consulting for inclusive design practices.
+                I am a software engineer and technical writer. I have experience in both contracting and in-house roles.
+                I build software solutions and also write clear, effective documentation for them.
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -55,15 +52,13 @@ const AccordionComponent = () => {
               id="panel2a-header"
             >
               <Typography className={classes.heading}>
-                What is your typical project timeline?
+                What technologies do you work with?
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
-                Project timelines vary based on scope and complexity. A standard website typically 
-                takes 2 to 4 weeks, while larger applications may require 6 to 12 weeks. I provide 
-                detailed project proposals with clear milestones and deliverables. I maintain regular 
-                communication throughout development and always deliver on agreed deadlines.
+                I work with a variety of tools including Python, JavaScript (React, Vue.js), and C++.
+                I also have experience with Docker, AWS, Linux systems, and networking tools.
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -74,15 +69,13 @@ const AccordionComponent = () => {
               id="panel3a-header"
             >
               <Typography className={classes.heading}>
-                Are you currently accepting new projects?
+                Where have you worked in the past?
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
-                Yes, I am currently available for freelance projects. I work with startups, 
-                established businesses, and individual clients who need professional web development 
-                services. I am selective about the projects I take on to ensure I can deliver 
-                exceptional quality and maintain focus on each client's success.
+                I have worked with organizations such as Bloomberg, Meta (Facebook), and The Tor Project.
+                My experience ranges from large tech companies to open source projects.
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -93,35 +86,13 @@ const AccordionComponent = () => {
               id="panel4a-header"
             >
               <Typography className={classes.heading}>
-                How can I get started working with you?
+                What kind of work do you do?
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
-                The best way to start is by sending me an email at enjeckc1e0 at gmail dot com with details 
-                about your project. Include your timeline, budget range, and any specific requirements. 
-                I typically respond within 24 hours and can schedule a consultation call to discuss 
-                your needs in detail and provide a customized proposal.
-              </Typography>
-            </AccordionDetails>
-          </Accordion>
-          <Accordion>
-            <AccordionSummary
-              expandIcon={<ExpandMoreIcon />}
-              aria-controls="panel5a-content"
-              id="panel5a-header"
-            >
-              <Typography className={classes.heading}>
-                What makes your approach different?
-              </Typography>
-            </AccordionSummary>
-            <AccordionDetails>
-              <Typography>
-                I build websites that work for everyone. Every project I deliver meets WCAG 2.1 AA standards 
-                with proper semantic markup, keyboard navigation, and screen reader support. I optimize for 
-                Core Web Vitals, implement comprehensive SEO with structured data, and ensure fast page loads 
-                across all devices. My code is clean, well-documented, and maintainable. I combine technical 
-                excellence with accessibility-first thinking to create inclusive digital experiences.
+                I am open to both contracting (freelance) and in-house (full-time) opportunities.
+                Whether you need a developer for a specific project or a permanent team member, I can help.
               </Typography>
             </AccordionDetails>
           </Accordion>

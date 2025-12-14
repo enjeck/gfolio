@@ -49,12 +49,8 @@ const SearchBox = (props) => {
     el.style.display = "block";
 
     if (window.innerWidth < 768) {
-      /* Display another search bar on mobile screens */
       document.querySelector(".mobile-search-box").style.display = "block";
-      /* Hide other search options on mobile screens */
       document.querySelector(".search-select").style.display = "none";
-
-      /* Hide body when mobile search area is active */
       document.querySelector("body").style.height = "100vh";
       document.querySelector("body").style.overflow = "hidden";
 
@@ -83,9 +79,7 @@ const SearchBox = (props) => {
     }
   }, []);
 
-  /// Remove option upon button click
   function removeOption(i) {
-    // i.remove();
     i.style.display = "none";
   }
 

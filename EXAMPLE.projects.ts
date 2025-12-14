@@ -8,7 +8,7 @@
  * FILE LOCATION: src/data/projects.data.ts
  */
 
-import { Project } from '../types';
+import { Project } from './src/types';
 
 export const PROJECTS: Project[] = [
   // EXAMPLE 1: Web Application

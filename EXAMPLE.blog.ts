@@ -8,7 +8,7 @@
  * FILE LOCATION: src/data/blog.data.ts
  */
 
-import { BlogPost } from '../types';
+import { BlogPost } from './src/types';
 
 export const BLOG_POSTS: BlogPost[] = [
   // EXAMPLE 1: Technical Tutorial

@@ -6,9 +6,12 @@ import Header from "../components/header";
 import Footer from "../components/footer";
 import FilterMenu from "../components/filtermenu";
 
+import { useRouter } from "next/router";
+
 function NotFound() {
+  const router = useRouter();
   // Get url pathname to use as search value
-  const urlPathname = window.location.pathname;
+  const urlPathname = router.asPath;
   var rx = /[^/](.*)/g;
   var arr = rx.exec(urlPathname);
   let val = " ";

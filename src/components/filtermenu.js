@@ -5,7 +5,9 @@ import {
   faImage,
   faNewspaper,
   faMapMarkerAlt,
-  faBriefcase
+  faBriefcase,
+  faBuilding,
+  faGraduationCap
 } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import { useRouter } from "next/router";
@@ -42,7 +44,7 @@ const FilterMenu = () => {
           className={`filter-menu-item fmi ${router.pathname === '/blog' ? 'item-active' : ''}`}
         >
           <FontAwesomeIcon className="icon" icon={faNewspaper} />
-          <span> News </span>
+          <span> Blog </span>
         </Link>
         {/* <Link
           href="/maps"
@@ -51,6 +53,20 @@ const FilterMenu = () => {
           <FontAwesomeIcon className="icon" icon={faMapMarkerAlt} />
           <span> Maps </span>
         </Link> */}
+        <Link
+          href="/experience"
+          className={`filter-menu-item fmi ${router.pathname === '/experience' ? 'item-active' : ''}`}
+        >
+          <FontAwesomeIcon className="icon" icon={faBuilding} />
+          <span> Experience </span>
+        </Link>
+        <Link
+          href="/education"
+          className={`filter-menu-item fmi ${router.pathname === '/education' ? 'item-active' : ''}`}
+        >
+          <FontAwesomeIcon className="icon" icon={faGraduationCap} />
+          <span> Education </span>
+        </Link>
       </div>
     </div>
   );

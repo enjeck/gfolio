@@ -23,12 +23,13 @@ function Home() {
       value: "about"
     },
     { name: "projects", value: "works" },
+    { name: "experience", value: "experience" },
+    { name: "education & awards", value: "education" },
     { name: "technical writing", value: "writing" },
     { name: "portfolio images", value: "images" },
     { name: "connect with me", value: "social" }
   ];
 
-  // Website search
   const searchWebsite = () => {
     let path = document.querySelector(".search-input").value;
     // When search is triggered, add the value entered into the search bar to the url
@@ -49,7 +50,6 @@ function Home() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  // I'm Feeling Lucky search
   function feelingLucky() {
     let path = document.querySelector(".search-input").value;
 
@@ -59,7 +59,6 @@ function Home() {
       return;
     }
 
-    /* Get all elements matching the search term */
     const item = Content.filter((item) => item.category === path);
 
     // Get the link of the first match
@@ -95,27 +94,27 @@ function Home() {
         <BoxMenuDrop />
         <ProfileMenuDrop />
       </div>
-     <div className="flex-center">
-      <div className="search-container">
-        <div className="frontpage-logo">
-          <Logo />
-        </div>
+      <div className="flex-center">
+        <div className="search-container">
+          <div className="frontpage-logo">
+            <Logo />
+          </div>
           <SearchBox options={options} />
-        <div className="search-btns">
-          <input
-            className="search-btn sw"
-            type="button"
-            value="Search Website"
-            onClick={searchWebsite}
-          />
-          <input
-            className="search-btn ifl"
-            type="button"
-            value="I'm Feeling Lucky"
-            onClick={feelingLucky}
-          />
+          <div className="search-btns">
+            <input
+              className="search-btn sw"
+              type="button"
+              value="Search Website"
+              onClick={searchWebsite}
+            />
+            <input
+              className="search-btn ifl"
+              type="button"
+              value="I'm Feeling Lucky"
+              onClick={feelingLucky}
+            />
+          </div>
         </div>
-      </div>
       </div>
 
       <footer className="footer">

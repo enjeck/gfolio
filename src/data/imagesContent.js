@@ -1,15 +1,13 @@
 const tutcode = "/images/tutcode.png";
-const enjeck = "/images/enjeck.png";
-const ll = "/images/libre-logos.svg";
+const enjeck = "/images/enjeckblog.png";
+const ll = "/images/librelogos2.png";
 const gfolio = "/images/gfolio.png";
 const jpg2svg = "/images/jpg2svg.png";
-const gg = "/images/geo-guess.png";
-const blobby = "/images/blobby.png";
-const cav = "/images/CryptographyVisualizer.png"
+const blobby = "/images/blobbies2.png";
 const li = "/images/linkedIn-icon.png";
 const gh = "/images/github-icon.png";
 const email = "/images/gmail-icon.png";
-const placeholder = "/images/bg1.png";
+const btns = "/images/btns2.png";
 export const ImagesContent = [
   {
     link: "https://github.com/enjeck/TutCode",
@@ -27,7 +25,7 @@ export const ImagesContent = [
     name: "Personal Website",
   },
   {
-    link: "https://github.com/enjeck/libre-logos",
+    link: "https://enjeck.com/libre-logos/",
     img: ll,
     name: "Libre Logos",
   },
@@ -37,33 +35,13 @@ export const ImagesContent = [
     name: "jpg2svg",
   },
   {
-    link: "https://github.com/enjeck/CrazyPassword",
-    img: placeholder,
-    name: "Crazy Password",
-  },
-  {
-    link: "https://github.com/enjeck/Geo-Guess",
-    img: gg,
-    name: "Geo Guess",
-  },
-  {
-    link: "https://github.com/enjeck/Blobby",
+    link: "https://enjeck.com/Blobby/",
     img: blobby,
     name: "Blobby",
   },
   {
-    link: "https://github.com/enjeck/Google-Sheet-to-website",
-    img: placeholder,
-    name: "Google Sheet to Website",
-  },
-  {
-    link: "https://github.com/enjeck/CryptoAlgoVisualizer",
-    img: cav,
-    name: "Crypto Algorithm Visualizer",
-  },
-  {
-    link: "https://github.com/enjeck/btns",
-    img: placeholder,
+    link: "https://enjeck.com/btns",
+    img: btns,
     name: "btns",
   },
   {

@@ -1,10 +1,11 @@
+import { getRelativeTime } from '../helpers';
 const geolocation = "/images/geolocation-api.jpg";
 const distanceTwoLoc = "/images/distance-two-locations.jpg";
 const svgAdvantages = "/images/svg-advantages-and-disadvantages.jpg";
 const jsIcon = "/images/js-icon.png";
 export const BlogContent = [
   {
-    link: "https://enjeck.com/blog",
+    link: "https://enjeck.com/blog/distance-two-locations/",
     img: svgAdvantages,
     icon: jsIcon,
     name: "Advantages and disadvantages of SVG",
@@ -12,10 +13,10 @@ export const BlogContent = [
     image format for the web. This article will cover the advantages and disadvantages 
     of SVG (Scalable Vector Graphics) as a format for displaying images on the web. `,
     category: "JavaScript",
-    date: "15 hours ago"
+    date: getRelativeTime("2021-09-25")
   },
   {
-    link: "https://enjeck.com/blog",
+    link: "https://enjeck.com/blog/geolocation-api/",
     img: distanceTwoLoc,
     icon: jsIcon,
     name: "How to calculate the distance between two locations using JavaScript",
@@ -24,10 +25,10 @@ export const BlogContent = [
     If you have the coordinates (that is; longitude and latitude) of the the starting and 
     destination locations, you can use this equation to calculate it. `,
     category: "JavaScript",
-    date: "2 days ago"
+    date: getRelativeTime("2021-09-25")
   },
   {
-    link: "https://enjeck.com/blog",
+    link: "https://enjeck.com/blog/svg-advantages-disadvantages/",
     img: geolocation,
     icon: jsIcon,
     name: "How to calculate the distance between two locations using JavaScript",
@@ -36,7 +37,7 @@ export const BlogContent = [
     give users directions, suggest friends or events in a person's locality, or to
     power a particular feature. `,
     category: "JavaScript",
-    date: "1 days ago"
+    date: getRelativeTime("2021-09-25")
   },
-  
+
 ];

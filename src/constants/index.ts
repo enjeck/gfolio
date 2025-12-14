@@ -46,9 +46,6 @@ export const DEFAULT_PLACEHOLDER = '/images/bg1.png';
 export const RESULT_COUNT_TEMPLATE = (count: number, time: number) =>
   `About ${count} results (${time.toFixed(2)} seconds)`;
 
-/**
- * Keyboard key codes
- */
 export const KEY_CODES = {
   ENTER: 13,
   ESCAPE: 27,
@@ -57,9 +54,6 @@ export const KEY_CODES = {
   ARROW_DOWN: 40,
 } as const;
 
-/**
- * Breakpoints for responsive design
- */
 export const BREAKPOINTS = {
   MOBILE: 768,
   TABLET: 1024,

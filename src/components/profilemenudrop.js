@@ -5,12 +5,10 @@ import { faUserPlus } from "@fortawesome/free-solid-svg-icons";
 
 const ProfileMenuDrop = () => {
   const [isProfileActive, setProfileActive] = useState("false");
-  // Toggle the dropdown
   const handleToggle = () => {
     setProfileActive(!isProfileActive);
   };
 
-   // Hide the dropdown when user clicks outside the element
   function useOutsideHandler(ref) {
     useEffect(() => {
       function handleClickOutside(event) {
@@ -60,7 +58,7 @@ const ProfileMenuDrop = () => {
           />
           <p className="detail-text"> Enjeck</p>
           <p className="detail-text"> enjeckc1e0 at gmail dot com </p>
-          <a href="https://enjeck.com"> My other website </a>
+          <a href="https://enjeck.com"> My alternative website </a>
         </div>
         <Link className="second-detail" href="/about">
           <FontAwesomeIcon className="fa-user-plus" icon={faUserPlus} />
@@ -70,7 +68,7 @@ const ProfileMenuDrop = () => {
           <a href="https://github.com/enjeck"> GitHub</a>
         </div>
         <div className="fourth-detail">
-          <a href="https://github.com/PROTechThor/gfolio"> View code </a> <span> • </span>
+          <a href="https://github.com/enjeck/gfolio"> View code </a> <span> • </span>
           <Link href="/blog"> Blog & news </Link>
         </div>
       </div>

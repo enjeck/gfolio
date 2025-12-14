@@ -2,20 +2,20 @@ export const Content = [
   {
     category: "about",
     link: "/about#me",
-    name: "Professional Developer & Technical Writer",
-    excerpt: `Freelance developer and technical writer specializing in high-performance, accessible web applications. I build modern websites with a strong emphasis on web accessibility (WCAG compliance), SEO optimization, performance best practices, and inclusive design. My approach combines technical excellence with clear communication to deliver solutions that reach every user and rank well in search engines.`
+    name: "Who am I?",
+    excerpt: `I am a software engineer and technical writer who does both contracting and in-house jobs. I specialize in high-performance software and accessible web applications. I build modern websites with a strong emphasis on web accessibility (WCAG compliance), SEO optimization, and performance best practices. My approach combines technical excellence with clear communication.`
   },
   {
     category: "about",
     link: "/about#skills",
-    name: "Technical Skills & Expertise",
-    excerpt: `Core Specializations: Web Accessibility (WCAG 2.1 AA/AAA), Performance Optimization, SEO Best Practices, Semantic HTML. Frontend: React, Next.js, Gatsby, JavaScript, HTML5, CSS3. Backend: Python, GraphQL, Node.js. Additional: Keyboard Navigation, Screen Reader Optimization, Core Web Vitals, Technical Documentation, Responsive Design, Progressive Enhancement.`
+    name: "What technologies do I work with?",
+    excerpt: ` Python (pytest, Flask), C++, JavaScript/TypeScript (Vue.js, React.js, Next.js, Svelte), Docker, Git, AWS (EC2, Lambda, SageMaker), Linux.`
   },
   {
-    category: "works",
-    link: "https://github.com/enjeck/TutCode",
-    name: "TutCode - Interactive Learning Platform",
-    excerpt: `An innovative web application that enables simultaneous coding practice and tutorial viewing. Features split-screen interface for enhanced learning efficiency with HTML, CSS, and JavaScript. Built to streamline the developer learning experience.`
+    category: "about",
+    link: "/experience",
+    name: "Where have I worked in the past?",
+    excerpt: `I have worked with a variety of organizations ranging from open source projects to large tech companies. My experience includes roles at Bloomberg, Meta (Facebook), SageMath, and The Tor Project. Check out my Experience page for more details.`
   },
   {
     category: "works",
@@ -31,7 +31,7 @@ export const Content = [
   },
   {
     category: "works",
-    link: "https://github.com/enjeck/libre-logos",
+    link: "https://enjeck.com/libre-logos/",
     name: "Libre Logos - Open Source Design Project",
     excerpt: `A curated collection of free, professionally designed logos for open source projects. Features responsive design with dynamically generated individual logo pages. Combines design expertise with automated content generation using Gatsby.`
   },
@@ -43,41 +43,16 @@ export const Content = [
   },
   {
     category: "works",
-    link: "https://github.com/enjeck/CrazyPassword",
-    name: "Crazy Password - Interactive Validation Game",
-    excerpt: `An entertaining password validation game featuring increasingly complex requirements. Demonstrates advanced regex patterns and Python validation logic using Django framework. A playful exploration of security best practices.`
-  },
-  {
-    category: "works",
-    link: "https://github.com/enjeck/Geo-Guess",
-    name: "Geo Guess - Geography Learning Game",
-    excerpt: `An interactive geography game challenging players to estimate distances between global locations. Features real-time scoring, distance calculations using the Haversine formula, and educational gameplay built with JavaScript and Python.`
-  },
-  {
-    category: "works",
-    link: "https://github.com/enjeck/btns",
+    link: "https://enjeck.com/btns",
     name: "CSS Button Components Library",
     excerpt: `A curated collection of modern button designs featuring advanced CSS hover effects and animations. Ready-to-use components for enhancing user interface interactions and elevating web design aesthetics.`
   },
   {
     category: "works",
-    link: "https://github.com/enjeck/Blobby",
+    link: "https://enjeck.com/Blobby/",
     name: "Blobby - Generative Character Art",
     excerpt: `A creative Python project generating unique SVG blob characters with randomized shapes, colors, and features. Each character is algorithmically created with distinct attributes, demonstrating procedural design and SVG manipulation techniques.`
   },
-  {
-    category: "works",
-    link: "https://github.com/enjeck/Google-Sheet-to-website",
-    name: "Sheet to Site - Dynamic Content Platform",
-    excerpt: `An innovative tool that transforms Google Sheets into live websites with real-time synchronization. Non-technical users can manage website content through familiar spreadsheet interfaces, demonstrating creative API integration.`
-  },
-  {
-    category: "works",
-    link: "https://github.com/enjeck/CryptoAlgoVisualizer",
-    name: "Cryptography Algorithm Visualizer",
-    excerpt: `An educational tool providing interactive visualizations of cryptographic algorithms including Caesar's Cipher and Monoalphabetic Cipher. Makes complex security concepts accessible through clear visual demonstrations built with JavaScript.`
-  },
-
   {
     category: "writing",
     link: "https://enjeck.com/blog",

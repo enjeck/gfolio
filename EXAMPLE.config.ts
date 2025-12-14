@@ -8,7 +8,7 @@
  * FILE LOCATION: src/config/portfolio.config.ts
  */
 
-import { PersonalInfo, SkillsConfig, SocialLink, SiteMetadata } from '../types';
+import { PersonalInfo, SkillsConfig, SocialLink, SiteMetadata } from './src/types';
 
 /**
  * PERSONAL INFORMATION
@@ -46,7 +46,7 @@ export const SKILLS: SkillsConfig = {
     "PostgreSQL",
     "MongoDB",
   ],
-  
+
   // Your interests and other skills
   interests: [
     "Open Source",
@@ -55,7 +55,7 @@ export const SKILLS: SkillsConfig = {
     "Photography",
     "Teaching",
   ],
-  
+
   // OPTIONAL: Organize skills into categories
   categories: {
     "Frontend": ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Next.js"],

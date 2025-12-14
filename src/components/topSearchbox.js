@@ -25,7 +25,6 @@ const TopSearchBox = () => {
     { name: "social", value: "social" }
   ];
 
-  // Get url pathname to use as search value
   const urlPathname = typeof window !== 'undefined' ? window.location.pathname : router?.pathname || '';
   var rx = /[^/](.*)/g;
   var arr = rx.exec(urlPathname);
@@ -61,24 +60,18 @@ const TopSearchBox = () => {
     el.style.display = "block";
 
     if (window.innerWidth < 768) {
-      /* Display another search bar on mobile screens */
       document.querySelector(".mobile-search-box").style.display = "block";
-      /* Hide other search options on mobile screens */
       document.querySelector(".search-select").style.display = "none";
-      
-      /* Hide body */
+
       document.querySelector("body").style.height = "100vh";
       document.querySelector("body").style.overflow = "hidden";
-
-      /* Focus on input */
       document.querySelector(".mobile-search-input").focus()
     }
     document.querySelector(".fa-search-left").style.display = "block";
-  
+
   }
 
   function hideOptions() {
-    // Delay element hiding by few milliseconds to ensure it can be clicked
     setTimeout(function () {
       let el = document.querySelector(".search-select");
       el.style.display = "none";
@@ -89,7 +82,6 @@ const TopSearchBox = () => {
   useEffect(() => {
     const clearBtn = document.querySelector(".clear-icon");
     let input = document.querySelector(".search-input").value;
-    //console.log(input);
     if (input) {
       clearBtn.style.display = "none";
     } else {
@@ -97,19 +89,15 @@ const TopSearchBox = () => {
     }
   }, []);
 
-  /// Remove option upon button click
   function removeOption(i) {
-    // i.remove();
     i.style.display = "none";
   }
 
-  // Clear input field
   function clear() {
     let input = document.querySelector(".search-input");
     input.value = "";
   }
 
-  // Search Website, which works by pushing search term to the url
   const searchWebsite = () => {
     let path = document.querySelector(".search-input").value;
     if (path) {
@@ -117,7 +105,6 @@ const TopSearchBox = () => {
     }
   };
 
-  // Only show clear button when search input is nonempty
   const clearValue = () => {
     let closeIcon = document.querySelector(".clear-icon");
     let searchValue = document.querySelector(".search-input").value;
@@ -162,10 +149,10 @@ const TopSearchBox = () => {
       </div>
       <div className="topmenu-search-box search-box">
         <div className="search-cont">
-        <FontAwesomeIcon 
-        className="fa fa-search-left" 
-        icon={faSearch} />
-        
+          <FontAwesomeIcon
+            className="fa fa-search-left"
+            icon={faSearch} />
+
           <div className="search">
             <div className="search-value">
               <input
@@ -214,13 +201,13 @@ const TopSearchBox = () => {
             </div>
           </div>
           <div className="searchbox-icons">
-          <FontAwesomeIcon
-            className="si fa-times clear-icon"
-            icon={faTimes}
-            title="Clear"
-            onClick={clear}
-          />
-          <FontAwesomeIcon className="si fa-search-right" icon={faSearch} />
+            <FontAwesomeIcon
+              className="si fa-times clear-icon"
+              icon={faTimes}
+              title="Clear"
+              onClick={clear}
+            />
+            <FontAwesomeIcon className="si fa-search-right" icon={faSearch} />
           </div>
         </div>
       </div>
