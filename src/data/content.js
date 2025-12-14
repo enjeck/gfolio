@@ -27,13 +27,13 @@ export const Content = [
     category: "works",
     link: "https://enjeck.com/",
     name: "Personal Brand Website & Blog",
-    excerpt: `Custom-designed personal website featuring advanced CSS animations, interactive hover effects, and an integrated blog platform. Fully responsive design showcasing technical writing and development work built with Gatsby.`
+    excerpt: `Custom-designed personal website featuring advanced CSS animations, interactive hover effects, and an integrated blog platform. Fully responsive design showcasing technical writing and development work built with Next.js.`
   },
   {
     category: "works",
     link: "https://enjeck.com/libre-logos/",
     name: "Libre Logos - Open Source Design Project",
-    excerpt: `A curated collection of free, professionally designed logos for open source projects. Features responsive design with dynamically generated individual logo pages. Combines design expertise with automated content generation using Gatsby.`
+    excerpt: `A curated collection of free, professionally designed logos for open source projects. Features responsive design with dynamically generated individual logo pages. Combines design expertise with automated content generation using Next.js.`
   },
   {
     category: "works",
