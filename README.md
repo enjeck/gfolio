@@ -1,4 +1,4 @@
-## gfolio | Google Search inspired portfolio website
+## gfolio -- Google Search inspired portfolio website
 
 This is a personal website simulating Google Search. Built with NextJS.
 
@@ -21,7 +21,7 @@ npm run dev
 The app will be available at http://localhost:3000
 
 To use this template for your own portfolio, follow the steps in the [QUICKSTART.md](QUICKSTART.md) file.
-```
+
 
 ### Architecture
 
